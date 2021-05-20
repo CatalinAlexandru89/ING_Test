@@ -14,12 +14,24 @@ public class TestPlan {
     }
 
 
-    @Test(testName = "Click credit button ING")
+    @Test(testName = "Click buton credit unu")
     public static void creditClick() {
         driver.get(Utils.BASE_URL);
         MainPage webForm = new MainPage(driver);
 
         webForm.clickButonCredit();
+        webForm.clickButonCreditDoi();
+    }
+
+    @Test(testName = "Click buton suma credit")
+    public static void butonSumaCredit() {
+        driver.get(Utils.SECOND_URL);
+        PageTwo webForm = new PageTwo(driver);
+
+        webForm.butonSumaCredit();
+        webForm.butonSumaCreditt();
+        webForm.butonSumaCredittt();
+        webForm.butonScadentar();
     }
 
 
